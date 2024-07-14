@@ -1,0 +1,121 @@
+** start of undefined **
+
+<!DOCTYPEhtml>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
+  <title>survey-form</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1 id="title">Student Survey Form</h1>
+  <p id="description">This is the form to take the survey of students for the college admission.</p>
+  <form id="survey-form" action="https://www.freecodecamp.com/email-submit">
+    <fieldset id="container-1">
+      <label id="name-label">Enter Your Name: <input id="name" type="text" placeholder="Name" required/></label>
+      <label id="email-label">Enter Your Email: <input id="email" type="email" placeholder="Email" required/></label>
+      <label id="number-label">Enter Your Mobile No.:<input id="number" type="number" min="10" max="10" placeholder="phone No." required/></label>
+    </fieldset>
+    <fieldset id="container-2">
+      <legend>Choose Your Course</legend>
+      <select id="dropdown">
+        <option value="">(Select One)</option>
+        <option value="1">BE/B.Tech</option>
+        <option value="2">BSC</option>
+        <option value="3">B.Com</option>
+      </select>
+    </fieldset>
+    <fieldset id="container-3">
+      <legend>Gender</legend>
+      <label><input type="radio" name="group1" value="female" checked> Female</label>
+      <label><input type="radio" name="group1" value="male"> Male</label>
+    </fieldset>
+    <fieldset id="container-4">
+      <legend>Your Interest</legend>
+        <label><input type="checkbox" value="web-development" checked /> Web Development</label>
+        <label><input type="checkbox" value="security" /> security</label>
+        <label><input type="checkbox" value="Data-Science" /> Data science</label>
+        <label><input type="checkbox" value="Other" /> Other</label>
+    </fieldset>
+    <fieldset id="container-5">
+      <label>What you want to learn?<textarea rows="5" cols="68"></textarea></label>
+    </fieldset> 
+    <button id="submit" action="submit" value="Submit">Submit</button>
+  </form>
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  font-family: Verdana; 
+  background-color: #003135;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 0 380px;
+}
+
+fieldset {
+  margin: 20px 380px;
+  border: none;
+}
+
+#container-1 input {
+  display: block;
+  width: 500px;
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-color: #024950;
+  border: 1px solid #024950;
+}
+
+#container-2 select {
+  margin: 0 auto;
+  width:  500px;
+  height: 25px;
+  background-color: #024950;
+} 
+
+#container-3 label {
+  display: block;
+  margin: 5px 0;
+}
+
+#container-4 label {
+  display: block;
+  margin: 5px 0;
+}
+
+#container-5 textarea {
+  display: block;
+  margin: 5px 0;
+  background-color: #024950;
+}
+
+button {
+  width: 120px;
+  height: 35px;
+  font-size: 20px;
+  margin: 30px 50%;
+  border-radius: 10px;
+  background-color: #024950;
+  color: white;
+}
+
+** end of undefined **
+
